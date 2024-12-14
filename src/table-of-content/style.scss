@@ -6,8 +6,8 @@
  */
 
 .wp-block-a1a-table-of-content {
-	position: static;
-	top: 50px;
+	position: sticky;
+	top: 50px; 
 
 	.__block-inner {
 		padding: 1.5em;
