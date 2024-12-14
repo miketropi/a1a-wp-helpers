@@ -1,0 +1,34 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/table-of-content/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-a1a-table-of-content .__block-inner {
+  padding: 1.5em;
+  background: #f4f4f4;
+}
+.wp-block-a1a-table-of-content .__block-inner ol {
+  margin: 0;
+  padding: 0 0 0 1em;
+  font-size: 0.9em;
+}
+.wp-block-a1a-table-of-content .__block-inner ol li {
+  margin-bottom: 0.5em;
+}
+.wp-block-a1a-table-of-content .__block-inner ol li a {
+  text-decoration: none;
+}
+.wp-block-a1a-table-of-content .__block-inner ol li a:hover {
+  border-bottom: solid 1px black;
+}
+.wp-block-a1a-table-of-content .a1a-block-heading {
+  margin: 0 0 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

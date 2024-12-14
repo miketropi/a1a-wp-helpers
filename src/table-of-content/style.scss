@@ -1,0 +1,38 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-a1a-table-of-content {
+
+	.__block-inner {
+		padding: 1.5em;
+    background: #f4f4f4;
+
+		ol {
+			margin: 0;
+			padding: 0 0 0 1em;
+			font-size: .9em;
+
+			li {
+				margin-bottom: .5em;
+
+				a {
+					text-decoration: none;
+					
+					&:hover {
+						border-bottom: solid 1px black;
+					}
+				}
+			}
+		}
+	}
+
+	.a1a-block-heading {
+		margin: 0 0 1em;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+}
