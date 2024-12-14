@@ -6,10 +6,13 @@
  */
 
 .wp-block-a1a-table-of-content {
+	position: static;
+	top: 50px;
 
 	.__block-inner {
 		padding: 1.5em;
     background: #f4f4f4;
+		border-radius: 1px;
 
 		ol {
 			margin: 0;
@@ -18,13 +21,19 @@
 
 			li {
 				margin-bottom: .5em;
+				opacity: .6;
+
+				&:hover {
+					opacity: 1;
+
+					a {
+						border-bottom: solid 1px black;
+					}
+				}
 
 				a {
 					text-decoration: none;
-					
-					&:hover {
-						border-bottom: solid 1px black;
-					}
+					transition: .3s ease; 
 				}
 			}
 		}

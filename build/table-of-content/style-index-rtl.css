@@ -7,9 +7,14 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.wp-block-a1a-table-of-content {
+  position: static;
+  top: 50px;
+}
 .wp-block-a1a-table-of-content .__block-inner {
   padding: 1.5em;
   background: #f4f4f4;
+  border-radius: 1px;
 }
 .wp-block-a1a-table-of-content .__block-inner ol {
   margin: 0;
@@ -18,12 +23,17 @@
 }
 .wp-block-a1a-table-of-content .__block-inner ol li {
   margin-bottom: 0.5em;
+  opacity: 0.6;
+}
+.wp-block-a1a-table-of-content .__block-inner ol li:hover {
+  opacity: 1;
+}
+.wp-block-a1a-table-of-content .__block-inner ol li:hover a {
+  border-bottom: solid 1px black;
 }
 .wp-block-a1a-table-of-content .__block-inner ol li a {
   text-decoration: none;
-}
-.wp-block-a1a-table-of-content .__block-inner ol li a:hover {
-  border-bottom: solid 1px black;
+  transition: 0.3s ease;
 }
 .wp-block-a1a-table-of-content .a1a-block-heading {
   margin: 0 0 1em;
