@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       A1a Wp Helpers
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       A1A Block.
  * Requires at least: 6.6
  * Requires PHP:      7.2
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Mike
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       a1a-wp-helpers
@@ -44,6 +44,6 @@ require_once(A1AWH_DIR . '/inc/template-tags.php');
  */
 function create_block_a1a_wp_helpers_block_init() {
 	register_block_type( __DIR__ . '/build/table-of-content' ); 
-	register_block_type( __DIR__ . '/build/membership' ); 
+	// register_block_type( __DIR__ . '/build/membership' ); 
 }
 add_action( 'init', 'create_block_a1a_wp_helpers_block_init' );
