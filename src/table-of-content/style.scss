@@ -11,7 +11,7 @@
 
 	.__block-inner {
 		padding: 1.5em;
-    background: #f4f4f4;
+    background: var(--wp--preset--color--base-2) !important;
 		border-radius: 1px;
 
 		ol {
@@ -26,8 +26,8 @@
 				&:hover {
 					opacity: 1;
 
-					a {
-						border-bottom: solid 1px black;
+					a { 
+						border-bottom: solid 1px var(--wp--preset--color--contrast);
 					}
 				}
 

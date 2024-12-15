@@ -14,11 +14,11 @@ export default function Edit({
 				<PanelBody title={ __( "Rating", "a1a" ) }>
 					<TextControl
 						__nextHasNoMarginBottom
-						__next40pxDefaultSize
+						__next40pxDefaultSize 
 						label="Container Class"
 						value={ containerClass }
 						onChange={ ( value ) => setAttributes( {
-							containerClass: value
+							containerClass: value 
 						} ) }
 					/>
 				</PanelBody>
