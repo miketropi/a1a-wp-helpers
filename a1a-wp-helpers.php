@@ -17,6 +17,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+{
+	/**
+	 * define
+	 */
+	define('A1AWH_VERSION', '0.1.0');
+	define('A1AWH_URL', plugin_dir_url( __FILE__ ));
+	define('A1AWH_DIR', plugin_dir_path( __FILE__ ));
+}
+
+/**
+ * Inc 
+ */
+require_once(A1AWH_DIR . '/inc/helpers.php');
+require_once(A1AWH_DIR . '/inc/hooks.php');
+require_once(A1AWH_DIR . '/inc/ajax.php');
+require_once(A1AWH_DIR . '/inc/static.php');
+require_once(A1AWH_DIR . '/inc/template-tags.php');
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -29,6 +47,8 @@ function create_block_a1a_wp_helpers_block_init() {
 	// register_block_type( __DIR__ . '/build/rating-block' );
 	// register_block_type( __DIR__ . '/build/review-card-block' ); 
 	register_block_type( __DIR__ . '/build/table-of-content' ); 
+	register_block_type( __DIR__ . '/build/membership' ); 
+	// register_block_type( __DIR__ . '/build/global-js-css' ); 
 }
 add_action( 'init', 'create_block_a1a_wp_helpers_block_init' );
 
