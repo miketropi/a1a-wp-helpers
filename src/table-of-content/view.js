@@ -32,7 +32,8 @@
     let self = elem;
     let containerClass = self.dataset.containerClass;
     let contentElem = document.querySelector(containerClass);
-    let headings = contentElem.querySelectorAll('h1,h2,h3,h4,h5,h6,.heading-tof');
+    // let headings = contentElem.querySelectorAll('h1,h2,h3,h4,h5,h6,.heading-tof');
+    let headings = contentElem.querySelectorAll('h2,h3,.heading-tof');
     
     let tableOfContentHeadings_Html = ``;
     headings.forEach((h, __h_index) => {
@@ -40,13 +41,21 @@
       let headingID = h.id;
       let headingKey = (headingID ? headingID : `heading_${ (Math.random() + 1).toString(36).substring(7) }`);
 
+      // Get the tag name (h2, h3, etc) of the heading element
+      let headingTag = h.tagName.toLowerCase();
+
       h.id = headingKey;
-      tableOfContentHeadings_Html += `<li><a href="#${ headingKey }">${ h.textContent }</a></li>`
+      tableOfContentHeadings_Html += `<li><a class="__is-${ headingTag }" href="#${ headingKey }">${ h.textContent }</a></li>`
     })
+
+    if(!tableOfContentHeadings_Html) {
+      self.innerHTML = ''
+      return;
+    };
     
     self.innerHTML = `<div class="__block-inner">
       <h4 class="a1a-block-heading not-in-toc">Table of Contents</h4>
-      <ol>${ tableOfContentHeadings_Html }</ol>
+      <ul>${ tableOfContentHeadings_Html }</ul>
     </div>`;
   })
 

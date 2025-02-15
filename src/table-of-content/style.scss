@@ -14,6 +14,22 @@
     background: var(--wp--preset--color--base-2) !important;
 		border-radius: 1px;
 
+		ul {
+			margin: 0;
+			padding: 0;
+
+			li {
+				list-style: none;
+
+				a.__is-h2 {
+					font-size: 1.2em;
+				}
+				a.__is-h3 {
+					font-size: 1em;
+				}
+			}
+		}
+
 		ol {
 			margin: 0;
 			padding: 0 0 0 1em;

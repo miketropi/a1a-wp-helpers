@@ -16,6 +16,19 @@
   background: var(--wp--preset--color--base-2) !important;
   border-radius: 1px;
 }
+.wp-block-a1a-table-of-content .__block-inner ul {
+  margin: 0;
+  padding: 0;
+}
+.wp-block-a1a-table-of-content .__block-inner ul li {
+  list-style: none;
+}
+.wp-block-a1a-table-of-content .__block-inner ul li a.__is-h2 {
+  font-size: 1.2em;
+}
+.wp-block-a1a-table-of-content .__block-inner ul li a.__is-h3 {
+  font-size: 1em;
+}
 .wp-block-a1a-table-of-content .__block-inner ol {
   margin: 0;
   padding: 0 0 0 1em;
