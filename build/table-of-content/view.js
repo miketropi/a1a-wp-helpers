@@ -54,9 +54,23 @@
     }
     ;
     self.innerHTML = `<div class="__block-inner">
-      <h4 class="a1a-block-heading not-in-toc">Table of Contents</h4>
+      <h4 class="a1a-block-heading not-in-toc">
+        <span>Mục Lục</span>
+        <button class="__toggle-toc">
+          <span class="__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down"><path d="M6 9l6 6 6-6"/></svg>
+          </span>
+        </button>
+      </h4>
       <ul>${tableOfContentHeadings_Html}</ul>
     </div>`;
+
+    // Add click handler to toggle TOC
+    const heading = self.querySelector('.a1a-block-heading');
+    const ul = self.querySelector('ul');
+    heading.addEventListener('click', () => {
+      ul.style.display = ul.style.display === 'none' ? 'block' : 'none';
+    });
   });
 })(window);
 /* eslint-enable no-console */

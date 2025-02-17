@@ -9,6 +9,22 @@
 	position: sticky;
 	top: 50px; 
 
+	.a1a-block-heading {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			border: none;
+			background: transparent;
+		}
+	}
+
 	.__block-inner {
 		padding: 1.5em;
     background: var(--wp--preset--color--base-2) !important;
@@ -26,6 +42,19 @@
 				}
 				a.__is-h3 {
 					font-size: 1em;
+					padding-left: 1em;
+					display: flex;
+					width: 100%;
+
+					&:before {
+						content: '-';
+						display: block;
+						margin-right: .5em;
+					}
+				}
+
+				a {
+					text-decoration: none;
 				}
 			}
 		}
